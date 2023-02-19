@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Create class hide, p with text and button.
+        On click, hide have to be added in p
+    -->
+    <p id="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        ut beatae fugiat eum. Odio labore incidunt, 
+        hic veritatis animi quo officiis voluptatibus deleniti 
+        laborum dignissimos. Sunt totam voluptatem 
+        nostrum repellendus provident?
+    </p>
+    <button id="btn">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+       $(function(){
+            $('#btn').click(function(){
+                $('#text').addClass('hide');
+            });
+
+            $('#show').click(function(){
+                $('#text').removeClass('hide');
+            });
+
+            $('#toggle').click(function(){
+                $('#text').toggleClass('hide');
+            });
+       }); 
+    </script>
+</body>
+</html>
