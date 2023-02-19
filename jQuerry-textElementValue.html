@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get value</title>
+</head>
+<body>
+    <input type="text" id="textField">
+    <button id="btn">Get text</button>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){  // eventlistener 
+            $('#btn').click(function(){
+
+                //let el=document.getElementById('textField');
+                //console.log(el.value);
+
+                let val = $('#textField').val();
+                console.log(val);
+            });
+        });
+    </script>
+</body>
+</html>
